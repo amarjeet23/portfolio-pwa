@@ -6,7 +6,7 @@
       <!-- <project/> -->
       <Experience/>
       
-      <Skill></Skill>
+      <!-- <Skill></Skill> -->
     </div>
     <hr>
       <social-media></social-media>
@@ -24,7 +24,7 @@ export default {
     // Project,
     personalInfo,
     SocialMedia,
-    Skill,
+    // Skill,
     Experience
   },
   data() {
@@ -34,6 +34,7 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -43,7 +44,8 @@ export default {
 body {
   margin: 0px;
   padding: 0px;
-  background-color:#7d7878
+  background-color:#7d7878;
+  font-family: 'Open Sans Condensed', sans-serif;
 
 }
 

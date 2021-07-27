@@ -6,6 +6,7 @@
     </div>
     <div>
         <p>Hi! I am Amarjeet Kumar! a full stack javascript developer</p>
+        <p>having more than 1+yrs of working experience</p>
         <p>Currently i am working at Unthinakble solution as a javascript developer</p>
     </div>
   </div>

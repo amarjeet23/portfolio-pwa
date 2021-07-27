@@ -1,9 +1,13 @@
 <template>
+<div class="exp-head">
+     <div>
+          <h2>Experience : -</h2>
+      </div>
   <div class="exp-main">
     <div class="exp-list">
-      <div class="selected-list" v-for="comp in company" :key="comp.id">
+      <div class="selected-list"  v-for="comp in company" :key="comp.id">
         <img src="/img/arrow.png" v-if="comp.selected" />
-        <div @click="selectCurrent(comp)">{{ comp.name }}</div>
+        <div :class="comp.selected ? 'show-border' :''" @click="selectCurrent(comp)">{{ comp.name }}</div>
       </div>
     </div>
     <div class="exp-desc">
@@ -19,6 +23,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 <script>
 export default {
@@ -87,6 +92,12 @@ export default {
 };
 </script>
 <style scoped>
+.exp-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
 .exp-main {
   display: flex;
   flex-direction: row;
@@ -141,5 +152,8 @@ img {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
+}
+.show-border{
+    border-bottom : 2px solid green
 }
 </style>
