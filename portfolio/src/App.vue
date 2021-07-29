@@ -1,40 +1,21 @@
 <template>
   <div id="app">
-    <div class="main-content">
-      <personal-info></personal-info>
-      
-      <!-- <project/> -->
-      <Experience/>
-      
-      <!-- <Skill></Skill> -->
-    </div>
-    <hr>
-      <social-media></social-media>
+    <router-view></router-view>
   </div>
 </template>
-<script>
-import Project from "./components/Project.vue"
-import personalInfo from "./components/PersonalInfo.vue"
-import SocialMedia from "./components/SocialMedia.vue"
-import Skill from "./components/Skill.vue";
-import Experience from "./components/Experience/Experience.vue"
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+@Component({
 
-export default {
-  components:{
-    // Project,
-    personalInfo,
-    SocialMedia,
-    // Skill,
-    Experience
-  },
-  data() {
-    return {};
-  }
-};
+})
+export default class App extends Vue{
+  public modalStatus !:any;
+
+}
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -44,9 +25,11 @@ export default {
 body {
   margin: 0px;
   padding: 0px;
-  background-color:#7d7878;
-  font-family: 'Open Sans Condensed', sans-serif;
-
+  background-color: #f5f5f5; /* font-family: "Open Sans Condensed", sans-serif; */
+  font-family: Maven Pro, sans-serif;
+  /* font-size: 2rem; */
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
 }
 
 #nav a.router-link-exact-active {
@@ -57,19 +40,18 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: left;
-  margin-left:15%;
-  margin-top:5%;
-  margin-right:7%;
+  margin-left: 15%;
+  margin-top: 5%;
+  margin-right: 7%;
 }
 @media screen and (max-width: 992px) {
   .main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin-left:7%;
-  margin-right:7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 7%;
+    margin-right: 7%;
   }
 }
-
 </style>

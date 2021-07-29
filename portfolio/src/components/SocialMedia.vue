@@ -1,33 +1,27 @@
 <template>
-   <div class="footer-main">
-       <div>
-           connect with me:
-       </div>
-         <div class="social-link">
-        <div>
-          <a href="https://www.linkedin.com/in/amarjeet-kumar-4662a1a7/">
-            <img src="/img/linkedin.png" />
-          </a>
-        </div>
-        <div>
-          <a href="https://github.com/amarjeet23">
-            <img src="/img/github.png" />
-          </a>
-        </div>
+  <div class="footer-main">
+    <div>connect with me:</div>
+    <div class="social-link">
+      <div>
+        <a href="https://www.linkedin.com/in/amarjeet-kumar-4662a1a7/">
+          <img src="/img/linkedin.png" />
+        </a>
       </div>
-   </div>
+      <div>
+        <a href="https://github.com/amarjeet23">
+          <img src="/img/github.png" />
+        </a>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
-
-export default{
-    name: "Project",
-    data() {
-        return{
-
-        }
-        
-    },
-}
+export default {
+  name: "Project",
+  data() {
+    return {};
+  }
+};
 </script>
 <style scoped>
 .social-link {
@@ -44,13 +38,18 @@ export default{
   border-radius: 50%;
   cursor: pointer;
 }
-.footer-main{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-     background-color:#125871;
-     color:#ffff;
-  height:200px
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #125871;
+  color: #ffff;
+  height: 200px;
+  /* position: absolute;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  overflow: hidden; */
 }
 </style>

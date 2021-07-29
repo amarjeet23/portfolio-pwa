@@ -1,21 +1,28 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
-import Home from "../views/Home.vue";
-
+import App from "../App.vue"
+import Home from "../components/Home.vue";
+import Blog from "../components/Blog.vue"
 Vue.use(VueRouter);
 
-const routes: Array<RouteConfig> = [
-  // {
-  //   path: "/",
-  //   name: "Home",
-  //   component: Home,
-  // },
-  // {
-  //   path: "/about",
-  //   name: "About",
-  //   component: () =>
-  //     import(/* webpackChunkName: "about" */ "../views/About.vue"),
-  // },
+const routes = [
+  {
+    path: "/",
+    name: "Home",
+    component: Home,
+  },
+  {
+    path: "/about",
+    name: "About",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+  },
+  {
+    path: "/blog",
+    name: "Blog",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../components/Blog.vue"),
+  },
 ];
 
 const router = new VueRouter({

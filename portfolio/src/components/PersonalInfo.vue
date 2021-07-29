@@ -5,9 +5,9 @@
       <p>Amarjeet kumar</p>
     </div>
     <div>
-        <p>Hi! I am Amarjeet Kumar! a full stack javascript developer</p>
-        <p>having more than 1+yrs of working experience</p>
-        <p>Currently i am working at Unthinakble solution as a javascript developer</p>
+        <div>Hi! I am Amarjeet Kumar! a full stack javascript developer</div>
+        <div>having more than 1+yrs of working experience</div>
+        <div>Currently i am working at Unthinakble solution as a javascript developer</div>
     </div>
   </div>
 </template>
@@ -29,8 +29,8 @@ export default {
 .personal-info{
     display:flex;
     flex-direction: column;
-    border: 5px solid #ffff;
-    background-color: #ffff;
+    border: 2px solid #eee;
+    background-color: #f5f5f5;
     border-radius: 5px;
     /* margin-right:10%; */
     margin-bottom:3%;
