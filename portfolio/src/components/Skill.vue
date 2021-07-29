@@ -77,6 +77,7 @@ export default {
 }
 .skill-description{
   flex:0.7;
+  margin-left:15px;
   /* border:1px solid #000000 */
 }
 
@@ -101,9 +102,9 @@ export default {
 }
 .skill-img img {
   /* height:50px; */
-  width:50%;
+  width:100%;
   /* max-width:100%; */
-  border-radius:50%
+  /* border-radius:50% */
   /* height:130px; */
 
 }

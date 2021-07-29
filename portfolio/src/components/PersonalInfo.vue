@@ -4,9 +4,8 @@
       <img src="/img/profile.jpeg" />
       <p>Amarjeet kumar</p>
     </div>
-    <div>
-        <div>Hi! I am Amarjeet Kumar! a full stack javascript developer</div>
-        <div>having more than 1+yrs of working experience</div>
+    <div class="desc">
+        <div>Hi! I am Amarjeet Kumar! a full stack javascript developer having more than 1+yrs of working experience.</div>
         <div>Currently i am working at Unthinakble solution as a javascript developer</div>
     </div>
   </div>
@@ -43,6 +42,9 @@ export default {
     border-bottom:1px solid grey;
     /* margin-right:50% */
 
+}
+.desc{
+  margin-left:10px;
 }
 
 </style>
