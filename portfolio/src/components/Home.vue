@@ -36,7 +36,7 @@ export default {
     return {};
   },
   computed: {
-    ...mapGetters("ModalModule", ["modalStatus"])
+    ...mapGetters("ModalModule", ["modalStatus",])
   }
 };
 </script>
